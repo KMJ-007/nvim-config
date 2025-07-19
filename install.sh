@@ -17,11 +17,14 @@ mkdir -p ~/.config/nix
 echo "experimental-features = nix-command flakes" > ~/.config/nix/nix.conf
 
 # Clone this repository if not already present
-if [ ! -d "~/.config/nvim/.git" ]; then
+if [ ! -d ~/.config/nvim/.git ]; then
     echo "📥 Cloning configuration..."
-    git clone https://github.com/KMJ-007/nvim-config.git ~/.config/nvim-temp
-    mv ~/.config/nvim-temp/* ~/.config/nvim/
-    rm -rf ~/.config/nvim-temp
+    # Backup existing config if any
+    if [ -d ~/.config/nvim ]; then
+        echo "🔄 Backing up existing nvim config..."
+        mv ~/.config/nvim ~/.config/nvim.backup.$(date +%s)
+    fi
+    git clone https://github.com/KMJ-007/nvim-config.git ~/.config/nvim
 fi
 
 cd ~/.config/nvim
