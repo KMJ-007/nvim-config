@@ -1,14 +1,5 @@
-# 🚀 Development Environment with LazyVim + Nix
+# 🚀 KMJ-007 dev setup
 
-Complete development setup with LazyVim and Nix for easy replication across machines.
-
-## ✨ What's Included
-- **Neovim** with LazyVim + Catppuccin theme
-- **Zsh** with Oh My Zsh and modern shell tools  
-- **Language servers** and development tools
-- **Hidden files** visible in file explorer
-
-## 🚀 Setup on New Machine
 
 **One command:**
 ```bash
