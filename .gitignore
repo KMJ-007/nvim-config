@@ -1,0 +1,50 @@
+# LazyVim
+lazy-lock.json
+
+# Neovim
+.repro/
+debug
+.lazy
+.neoconf.json
+
+# Nix
+result
+result-*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Logs
+*.log
+
+# Runtime files
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+
+# Node.js (if using any JS/TS tools)
+node_modules/
+*.tgz
+.npm
+.eslintcache
+
+# Python (if using Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
