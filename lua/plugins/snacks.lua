@@ -13,5 +13,15 @@ return {
         ]],
       },
     },
+    picker = {
+      sources = {
+        projects = {
+          paths = {
+            "~/projects",
+            "~/workspace",
+          },
+        },
+      },
+    },
   },
 }
