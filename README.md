@@ -24,7 +24,7 @@ A complete development setup using **LazyVim** and **Nix** for easy replication 
 
 ### Option 1: One-Command Setup
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/KMJ-007/nvim-config/main/install.sh | bash
 ```
 
 ### Option 2: Manual Setup
@@ -35,7 +35,7 @@ curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/instal
 
 2. **Clone this repo:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git ~/.config/nvim
+   git clone https://github.com/KMJ-007/nvim-config.git ~/.config/nvim
    cd ~/.config/nvim
    ```
 

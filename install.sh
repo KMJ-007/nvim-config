@@ -19,7 +19,7 @@ echo "experimental-features = nix-command flakes" > ~/.config/nix/nix.conf
 # Clone this repository if not already present
 if [ ! -d "~/.config/nvim/.git" ]; then
     echo "📥 Cloning configuration..."
-    git clone <YOUR_REPO_URL> ~/.config/nvim-temp
+    git clone https://github.com/KMJ-007/nvim-config.git ~/.config/nvim-temp
     mv ~/.config/nvim-temp/* ~/.config/nvim/
     rm -rf ~/.config/nvim-temp
 fi
