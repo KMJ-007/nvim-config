@@ -8,17 +8,20 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-utils.url = "github:numtide/flake-utils";
+    zig.url = "github:mitchellh/zig-overlay";
   };
 
-  outputs = { self, nixpkgs, home-manager, flake-utils }:
+  outputs = { self, nixpkgs, home-manager, flake-utils, zig }:
     let
       system = "aarch64-darwin"; # or "x86_64-linux" for Linux
-      pkgs = nixpkgs.legacyPackages.${system};
+      overlays = [ zig.overlays.default ];
+      pkgs = import nixpkgs { inherit system overlays; };
+      zigPkg = zig.packages.${system}.master;
     in
     {
       # Development shells per system
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = with pkgs; [
+        buildInputs = (with pkgs; [
           # Core development tools
           git
           curl
@@ -54,7 +57,7 @@
           gnumake
           cmake
           gcc
-        ];
+        ]) ++ [ zigPkg ];
 
         shellHook = ''
           echo "🚀 Development environment loaded!"
