@@ -24,6 +24,7 @@ return {
         telescope = true,
         notify = false,
         mini = false,
+        bufferline = false,
       },
     },
   },
