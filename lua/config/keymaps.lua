@@ -4,3 +4,6 @@
 
 -- Exit insert mode with jk
 vim.keymap.set("i", "jk", "<Esc>", { desc = "Exit insert mode" })
+
+-- Use lowercase s for vim-surround in visual mode.
+vim.keymap.set("x", "s", "<Plug>VSurround", { remap = true, desc = "Visual surround" })
