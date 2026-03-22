@@ -1,4 +1,4 @@
-# 🚀 KMJ-007 dev setup
+# KMJ-007 dev setup
 
 
 **One command:**
@@ -17,7 +17,7 @@ cd ~/.config/nvim
 nix run home-manager/master -- switch --flake .#karanjanthe
 ```
 
-## 🔧 Customization
+## Customization
 
 ### Add Neovim Plugins
 Create/edit files in `lua/plugins/`:
@@ -48,7 +48,7 @@ shellAliases = {
 };
 ```
 
-## 🔄 Updates
+## Updates
 
 ```bash
 # Update packages
@@ -59,7 +59,7 @@ home-manager switch --flake ~/.config/nvim#karanjanthe
 nix develop
 ```
 
-## 📋 Git Guidelines
+## Git Guidelines
 
-**✅ Commit:** `lua/`, `flake.nix`, `README.md`, scripts  
-**❌ Don't commit:** `flake.lock`, `lazy-lock.json`, cache dirs
+**Commit:** `lua/`, `flake.nix`, `README.md`, scripts  
+**Don't commit:** `flake.lock`, `lazy-lock.json`, cache dirs
