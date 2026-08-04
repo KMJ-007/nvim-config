@@ -36,7 +36,10 @@ nix run home-manager/master -- switch --flake .#karanjanthe
 
 echo "🎉 Setup complete!"
 echo ""
-echo "To activate the development shell, run:"
+echo "Neovim is ready. Open a new terminal, then run:"
+echo "  nvim"
+echo ""
+echo "For the optional full development shell, run:"
 echo "  cd ~/.config/nvim && nix develop"
 echo ""
 echo "To update your configuration:"

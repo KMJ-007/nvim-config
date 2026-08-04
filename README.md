@@ -21,6 +21,9 @@ The Git checkout remains at `~/.config/nvim` so it can be edited and updated
 normally. Home Manager installs the development tools and shell configuration,
 but intentionally does not replace the checkout with a Nix store symlink.
 
+After installation, open a new terminal and run `nvim`. The development shell
+is optional and provides the additional compilers and language tools below.
+
 ## Customization
 
 ### Add Neovim Plugins

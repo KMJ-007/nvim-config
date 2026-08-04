@@ -75,6 +75,15 @@
             home.homeDirectory = "/Users/karanjanthe";
             home.stateVersion = "23.11";
 
+            # Neovim must be available in the normal user profile. The
+            # devShell below is optional and should not be required to launch
+            # the editor.
+            home.packages = with pkgs; [
+              neovim
+              ripgrep
+              fd
+            ];
+
             # Programs configuration
             programs = {
               home-manager.enable = true;
