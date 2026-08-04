@@ -17,6 +17,10 @@ cd ~/.config/nvim
 nix run home-manager/master -- switch --flake .#karanjanthe
 ```
 
+The Git checkout remains at `~/.config/nvim` so it can be edited and updated
+normally. Home Manager installs the development tools and shell configuration,
+but intentionally does not replace the checkout with a Nix store symlink.
+
 ## Customization
 
 ### Add Neovim Plugins

@@ -82,8 +82,10 @@
               # Git configuration
               git = {
                 enable = true;
-                userName = "karanjanthe";
-                userEmail = "karanjanthe@gmail.com";
+                settings.user = {
+                  name = "karanjanthe";
+                  email = "karanjanthe@gmail.com";
+                };
               };
 
               # Zsh configuration
@@ -142,8 +144,9 @@
               zoxide.enable = true;
             };
 
-            # Symlink Neovim configuration
-            home.file.".config/nvim".source = ./.;
+            # The repository is cloned directly to ~/.config/nvim by install.sh.
+            # Do not also ask Home Manager to own that path: it would have to
+            # replace the Git checkout with a read-only Nix store symlink.
           }
         ];
       };

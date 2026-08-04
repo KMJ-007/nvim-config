@@ -16,7 +16,8 @@ echo "⚙️ Configuring Nix..."
 mkdir -p ~/.config/nix
 echo "experimental-features = nix-command flakes" > ~/.config/nix/nix.conf
 
-# Clone this repository if not already present
+# Clone this repository if not already present. The checkout itself is the
+# Neovim configuration; Home Manager deliberately does not manage this path.
 if [ ! -d ~/.config/nvim/.git ]; then
     echo "📥 Cloning configuration..."
     # Backup existing config if any
